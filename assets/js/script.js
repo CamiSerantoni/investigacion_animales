@@ -92,10 +92,20 @@ document.addEventListener("DOMContentLoaded", () => {
   botonAgregar.addEventListener("click", (e) => {
     e.preventDefault();
     const animalSelect = document.getElementById("animal").value;
-
     const edadSelect = document.getElementById("edad");
-
     const comentariosTextarea = document.getElementById("comentarios");
+
+    // Validar que se hayan ingresado todos los campos requeridos
+    if (
+      animalSelect.value === "Seleccione un animal" ||
+      edadSelect.value === "Seleccione un rango de años" ||
+      comentariosTextarea.value.trim() === ""
+    ) {
+      alert(
+        "Por favor completa todos los campos, incluyendo comentarios, rango de edad y tipo de animal."
+      );
+      return;
+    }
 
     const objAnimals = animalesType[animalSelect];
 
@@ -133,7 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* FUNCION PARA LIMPIAR EL FORM  DE REGISTRO  */
-
 function limpiarFormulario() {
   // Restablecer el valor del select "animal" a la opción predeterminada
   document.getElementById("animal").selectedIndex = 0;

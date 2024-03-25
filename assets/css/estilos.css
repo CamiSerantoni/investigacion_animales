@@ -57,7 +57,8 @@ body {
 }
 
 .card {
-  margin-bottom: 20px; /* Espacio entre las tarjetas */
+  margin: 20px; 
+  
 }
 
 .animal_new {
