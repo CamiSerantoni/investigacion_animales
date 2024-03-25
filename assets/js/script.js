@@ -63,13 +63,14 @@ const obtenerAnimal = (animal) => {
   }
 };
 
-// let animalList= [];
-
+/*  SELECTORES  */
 let animal = document.querySelector("#animal"),
   edad = document.querySelector("#edad"),
   comentarios = document.querySelector("#comentarios"),
   boton = document.querySelector("#btnRegistrar"),
   preview = document.querySelector("#preview");
+
+/* ANIMAL SELECTED ON  CHANGE */
 
 animal.addEventListener("change", () => {
   let selectedAnimal = animal.value;
@@ -81,6 +82,8 @@ animal.addEventListener("change", () => {
     preview.setAttribute("src", imgURL);
   }
 });
+
+/* DETECTAR  LA ACCIÓN  DE BOTÓN  DE AGREGAR  ANIMALES  */
 
 document.addEventListener("DOMContentLoaded", () => {
   const botonAgregar = document.getElementById("btnRegistrar");
@@ -98,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     objAnimals.edad = edadSelect.value;
     objAnimals.comentarios = comentariosTextarea.value;
-
+    /* CREACION DE NUEVA TARJETA */
     const nuevaTarjeta = `
       <div class="card animal_new" style="width: 15rem;">
         <img src="${objAnimals.img}" class="card-img-top" style="max-height: 10rem;" alt="${objAnimals.name}">
@@ -128,6 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* FUNCION PARA LIMPIAR EL FORM  DE REGISTRO  */
 
 function limpiarFormulario() {
   // Restablecer el valor del select "animal" a la opción predeterminada
