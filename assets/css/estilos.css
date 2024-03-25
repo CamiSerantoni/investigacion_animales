@@ -48,10 +48,7 @@ body {
     max-width: 85% !important;
 }
 
-.card {
-  width: 15rem;
-  margin: 10PX;
-}
+
 
 .contenedor_animales {
   display: flex;
@@ -63,14 +60,20 @@ body {
   margin-bottom: 20px; /* Espacio entre las tarjetas */
 }
 
-.audio-button {
-  border: none;
-  background: none;
-  color: #007bff;
+.animal_new {
+  object-fit: cover;
+  width: 100%;
+  height: fit-content;
   cursor: pointer;
-  font-size: 16px;
 }
 
-.audio-button i {
-  margin-right: 5px;
+.animal_new button {
+  width: 100%;
+
+  border: 0;
+}
+
+.animal_new    button:hover {
+  background-color: green;
+  color: white;
 }

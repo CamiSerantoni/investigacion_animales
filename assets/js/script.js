@@ -78,11 +78,7 @@ animal.addEventListener("change", () => {
   const imgURL = animalObj.img;
 
   if (imgURL) {
-    preview.src = imgURL;
-    const previewWidth = 150;
-    const previewHeight = 120;
-    preview.width = previewWidth;
-    preview.height = previewHeight;
+    preview.setAttribute("src", imgURL);
   }
 });
 
@@ -104,14 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
     objAnimals.comentarios = comentariosTextarea.value;
 
     const nuevaTarjeta = `
-      <div class="card" style="width: 15rem;">
+      <div class="card animal_new" style="width: 15rem;">
         <img src="${objAnimals.img}" class="card-img-top" style="max-height: 10rem;" alt="${objAnimals.name}">
         <div class="card-body">
           <h5 class="card-title">${objAnimals.name}</h5>
           <p class="card-text">Edad: ${objAnimals.edad}</p>
           <p class="card-text">Comentarios:${objAnimals.comentarios}</p>
-          <button class="audio-button" data-sound="${objAnimals.sonido}">
-            <i class="fas fa-volume-up"></i> Reproducir sonido
+          <button class=" btn btn-secondary" data-sound="${objAnimals.sonido}">
+            <i class="fas fa-volume-up"></i>
           </button>
         </div>
       </div>
@@ -122,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Limpia el formulario después de agregar la nueva tarjeta
     limpiarFormulario();
     // Obtener todos los botones de audio y agregar el evento de reproducción de sonido
-    const audioButtons = document.querySelectorAll(".audio-button");
+    const audioButtons = document.querySelectorAll(".btn-secondary");
     audioButtons.forEach((button) => {
       button.addEventListener("click", () => {
         const soundSrc = button.getAttribute("data-sound");
