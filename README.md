@@ -50,7 +50,5 @@ De forma general, se logra visualizar de la siguiente manera:
 
 
 
-![image](https://github.com/CamiSerantoni/investigacion_animales/assets/152921799/2d149e04-918d-40ea-b983-53b790f6c0d4)
-
 
 #### Camila Serantoni R. 
