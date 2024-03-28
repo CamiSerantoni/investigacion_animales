@@ -42,7 +42,14 @@ Toda el desafío fue desarrollado solo a partir de Bootstrap 5 principalmente y 
 
 
 ## Visualización 
+
+- De forma general, las clases para el desarrollo del proyecto deben tener la siguiente estructura:
+ ![image](https://github.com/CamiSerantoni/investigacion_animales/assets/152921799/2d149e04-918d-40ea-b983-53b790f6c0d4)
+
 De forma general, se logra visualizar de la siguiente manera:
+
+
+
 ![image](https://github.com/CamiSerantoni/investigacion_animales/assets/152921799/2d149e04-918d-40ea-b983-53b790f6c0d4)
 
 
