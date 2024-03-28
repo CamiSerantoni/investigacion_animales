@@ -1,5 +1,5 @@
 
-# Investigación Animales - Programación avanzada en JavaScript 🦁🐻🐍🐺🦅
+# Investigación Animales - 🦁🐻🐍🐺🦅
 
 ## Descripcion de la solución
 
